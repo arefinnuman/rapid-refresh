@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const Statistics = () => {
-    return (
-        <div>
-            <h1>Hello This is Statistics</h1>
-        </div>
-    );
+  return (
+    <div className="flex min-h-screen justify-center items-center">
+      <h1 className="text-5xl">Welcome to Statistics Template</h1>
+    </div>
+  );
 };
 
 export default Statistics;
