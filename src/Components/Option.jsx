@@ -1,11 +1,16 @@
 import React from "react";
+import Swal from "sweetalert2";
 
 const Option = ({ option, correctAnswer }) => {
   const handleQuizAnswer = (option) => {
     if (option === correctAnswer) {
-      console.log("Correct Answer");
+      Swal.fire("Good job!", "You Answer is Correct!", "success");
     } else {
-      console.log("wrong Answer");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "You did the Wrong Answer!",
+      });
     }
   };
   return (
