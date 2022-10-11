@@ -5,7 +5,7 @@ import Topic from "./Topic";
 const Assessments = () => {
   const topics = useLoaderData();
   return (
-    <div className="flex min-h-screen justify-center items-center">
+    <div className="md:flex sm:flex-row min-h-screen justify-center items-center">
       {topics.data.map((topic) => (
         <Topic topic={topic} key={topic.id}></Topic>
       ))}
