@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import AssessmentDetails from "../Components/AssessmentDetails";
 import Assessments from "../Components/Assessments";
 import Blog from "../Components/Blog";
+import Error from "../Components/Error";
 import Root from "../Components/Root";
 import Statistics from "../Components/Statistics";
 import { loaderFunction } from "./LoaderFunction";
@@ -11,11 +12,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement: (
-      <>
-        <h1>Error</h1>
-      </>
-    ),
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",
