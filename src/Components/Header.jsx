@@ -37,7 +37,9 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <Link className="btn btn-ghost normal-case text-xl">Rapid Refresh</Link>
+        <Link to="/home" className="btn btn-ghost normal-case text-xl">
+          Rapid Refresh
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
