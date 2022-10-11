@@ -6,7 +6,7 @@ const AssessmentDetails = () => {
   const questions = useLoaderData();
 
   return (
-    <div className="min-h-screen ">
+    <div className="grid grid-cols-2 gap-5 m-5">
       {questions.data.questions.map((ques) => (
         <Question key={questions.id} ques={ques}></Question>
       ))}
