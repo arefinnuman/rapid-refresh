@@ -55,11 +55,6 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        <Link to="/" className="btn">
-          Get started
-        </Link>
-      </div>
     </div>
   );
 };

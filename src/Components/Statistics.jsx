@@ -1,12 +1,12 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
-import { Line, LineChart, XAxis, YAxis } from "recharts";
+import { Line, LineChart, Tooltip, XAxis, YAxis } from "recharts";
 
 const Statistics = () => {
   const totals = useLoaderData().data;
   return (
     <div className="flex min-h-screen justify-center items-center">
-      <LineChart width={500} height={400} data={totals}>
+      <LineChart width={300} height={400} data={totals}>
         <Line
           type="monotone"
           dataKey="total"
@@ -15,6 +15,7 @@ const Statistics = () => {
         />
         <XAxis dataKey="name" />
         <YAxis />
+        <Tooltip />
       </LineChart>
     </div>
   );
