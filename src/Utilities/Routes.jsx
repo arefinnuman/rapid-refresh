@@ -38,7 +38,11 @@ const router = createBrowserRouter([
         loader: loaderFunction,
         element: <Assessments></Assessments>,
       },
-      { path: "/statistics", element: <Statistics></Statistics> },
+      {
+        path: "/statistics",
+        loader: loaderFunction,
+        element: <Statistics></Statistics>,
+      },
       { path: "/blog", element: <Blog></Blog> },
     ],
   },

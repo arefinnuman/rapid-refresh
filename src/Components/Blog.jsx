@@ -47,7 +47,7 @@ const Blog = () => {
       <article className="max-w-2xl px-6 py-24 m-5 space-y-12 bg-primary dark:text-gray-50 rounded-lg">
         <div className="w-full mx-auto space-y-4 text-center">
           <h1 className="text-4xl font-bold leading-tight md:text-5xl">
-            What is href in react ?
+            What is href in react. Explain your View.
           </h1>
         </div>
         <div className="pt-12 border-t dark:border-gray-700">
